@@ -40,6 +40,18 @@ public class MyHashMap {
 		}
 		}
 	}
+	public  Object  get(Object  key){
+		int hash=myHash(key.hashCode(),table.length);
+		Node2 first = table[hash];
+		while(first!=null) {
+			if(first.key.equals(key)) {
+				return first.value;
+			}else {
+				first=first.next;	
+			}
+		}
+		return null;
+	}
 	@Override
 	public String toString() {
 	StringBuffer sb=new StringBuffer("{");
