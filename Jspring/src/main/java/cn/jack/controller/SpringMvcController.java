@@ -17,13 +17,15 @@ public class SpringMvcController {
 
 
     @JrequestMapping("/testMvc")
-    public String testMvc(){
-    System.out.println("哈哈哈哈");
+    public String testMvc() {
+        System.out.println("哈哈哈哈");
         return "success";
     }
+
     @JrequestMapping("/testres")
     public void testRes(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        resp.getWriter().write("doTest2 method success!");;
+        resp.getWriter().write("doTest2 method success!");
+        ;
 
     }
 }

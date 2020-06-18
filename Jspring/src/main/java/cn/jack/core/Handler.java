@@ -28,9 +28,9 @@ public class Handler {
         this.method = method;
     }
 
-    public Handler(Object con, Method method){
-        this.con=con;
-        this.method=method;
+    public Handler(Object con, Method method) {
+        this.con = con;
+        this.method = method;
     }
 
 }
